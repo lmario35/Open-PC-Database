@@ -1,0 +1,35 @@
+name: Convert JSON to CSV
+
+on:
+  push:
+    paths:
+      - 'components-data/**/*.json'  # Surveille tous les fichiers JSON sous le répertoire components-data
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas
+
+      - name: Convert JSON to CSV
+        run: |
+          python components-data/scripts/convert_json_to_csv.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add components-data/**/*.csv
+          git commit -m "Auto-generated CSV from JSON"
+          git push
