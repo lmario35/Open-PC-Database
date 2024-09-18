@@ -229,5 +229,181 @@
         "boost_clock": "4.4 GHz",
         "tdp": "65W",
         "release_date": "2022-04"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i9-14900K",
+        "cores": 24,
+        "threads": 32,
+        "base_clock": "3.2 GHz",
+        "boost_clock": "5.8 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i9-14900KF",
+        "cores": 24,
+        "threads": 32,
+        "base_clock": "3.2 GHz",
+        "boost_clock": "5.8 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i7-14700K",
+        "cores": 20,
+        "threads": 28,
+        "base_clock": "3.4 GHz",
+        "boost_clock": "5.6 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i7-14700KF",
+        "cores": 20,
+        "threads": 28,
+        "base_clock": "3.4 GHz",
+        "boost_clock": "5.6 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-14600K",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "3.5 GHz",
+        "boost_clock": "5.3 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-14600KF",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "3.5 GHz",
+        "boost_clock": "5.3 GHz",
+        "tdp": "125W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-14500",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "2.8 GHz",
+        "boost_clock": "5.0 GHz",
+        "tdp": "65W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-14400",
+        "cores": 10,
+        "threads": 16,
+        "base_clock": "2.5 GHz",
+        "boost_clock": "4.7 GHz",
+        "tdp": "65W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i3-14100",
+        "cores": 4,
+        "threads": 8,
+        "base_clock": "3.5 GHz",
+        "boost_clock": "4.3 GHz",
+        "tdp": "60W",
+        "release_date": "2023-10"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i9-13900KS Special Edition",
+        "cores": 24,
+        "threads": 32,
+        "base_clock": "3.2 GHz",
+        "boost_clock": "6.0 GHz",
+        "tdp": "150W",
+        "release_date": "2023-01"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i9-13900KF",
+        "cores": 24,
+        "threads": 32,
+        "base_clock": "3.0 GHz",
+        "boost_clock": "5.8 GHz",
+        "tdp": "125W",
+        "release_date": "2022-09"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i7-13700K",
+        "cores": 16,
+        "threads": 24,
+        "base_clock": "3.4 GHz",
+        "boost_clock": "5.4 GHz",
+        "tdp": "125W",
+        "release_date": "2022-09"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i7-13700KF",
+        "cores": 16,
+        "threads": 24,
+        "base_clock": "3.4 GHz",
+        "boost_clock": "5.4 GHz",
+        "tdp": "125W",
+        "release_date": "2022-09"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-13600K",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "3.5 GHz",
+        "boost_clock": "5.1 GHz",
+        "tdp": "125W",
+        "release_date": "2022-09"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-13600KF",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "3.5 GHz",
+        "boost_clock": "5.1 GHz",
+        "tdp": "125W",
+        "release_date": "2022-09"
+    },
+    {
+        "brand": "Intel",
+        "socket": "LGA1700",
+        "model": "i5-13500",
+        "cores": 14,
+        "threads": 20,
+        "base_clock": "2.5 GHz",
+        "boost_clock": "4.8 GHz",
+        "tdp": "65W",
+        "release_date": "2023-01"
     }
 ]
