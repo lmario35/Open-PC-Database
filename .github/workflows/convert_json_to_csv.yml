@@ -3,33 +3,39 @@ name: Convert JSON to CSV
 on:
   push:
     paths:
-      - 'components-data/**/*.json'  # Surveille tous les fichiers JSON sous le répertoire components-data
+      - 'components-data/cpu/cpu_data.json'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          pip install pandas
+    - name: Install dependencies
+      run: |
+        pip install pandas
 
-      - name: Convert JSON to CSV
-        run: |
-          python scripts/convert_json_to_csv.py
+    - name: Convert JSON to CSV
+      run: |
+        python scripts/convert_json_to_csv.py
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add components-data/**/*.csv
-          git commit -m "Auto-generated CSV from JSON"
-          git push
+    - name: Commit CSV file
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add components-data/**/*.csv
+        git commit -m "Auto-generated CSV from JSON"
+
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
+      run: |
+        git push https://$GITHUB_TOKEN@github.com/${{ github.repository }}.git HEAD:main
